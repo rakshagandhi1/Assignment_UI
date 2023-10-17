@@ -1,0 +1,315 @@
+body {
+  margin: 0;
+  /* font-family: "Lato", sans-serif; */
+}
+.dashboardContainer {
+  padding: 0;
+  margin: 0;
+}
+.sidebarBlock {
+  padding: 0;
+  margin: 0;
+}
+.sidebar {
+  margin: 0;
+  padding: 10px;
+  /* width: 300px; */
+  background-color: #040440;
+  /* position: fixed; */
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar .heading {
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.sidebar .heading i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.sidebar a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #4e517b;
+  padding: 11px 15px;
+  margin: 6px 0;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sidebar a.active,
+.sidebar a.active i {
+  background-color: #2d2d69;
+  color: white;
+}
+
+.sidebar a:hover,
+.sidebar a:hover i {
+  background-color: #2d2d69;
+  color: white;
+  outline: none;
+  border: none;
+}
+.sidebar a i:nth-child(2) {
+  color: #fff;
+}
+
+.sidebar a:hover i:nth-child(2) {
+  display: none !important;
+}
+.sidebar a i {
+  color: #4e517a;
+  margin: 0 8px 0 0;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.profileBox {
+  background-color: #2d2d69;
+  color: white;
+  width: auto;
+  border-radius: 5px;
+  margin: auto;
+  padding: 5px 10px;
+  /* position: fixed;
+  bottom: 20px; */
+}
+.profileBox img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin: 0 10px 0 0;
+  vertical-align: bottom;
+  border-radius: 50%;
+  /* float: left; */
+}
+.profileBox span,
+.profileBox p {
+  font-size: 11px;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.8px;
+}
+.profileBox p {
+  color: #88879b;
+  font-size: 10.5px;
+  letter-spacing: normal;
+}
+.profileBox i {
+  color: #656572;
+  font-weight: 600;
+  cursor: pointer;
+}
+.detailsBlock {
+  background-color: #f5f6f8;
+}
+.header {
+  /* padding: 10px; */
+}
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+.has-search .form-control {
+  padding: 6px 0 6px 2.375rem;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  box-shadow: none;
+  border-radius: 4px;
+}
+.has-search input::placeholder {
+  color: #d8d9de;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.75rem;
+  height: 2.375rem;
+  line-height: 2rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+  font-size: 18px;
+}
+.graphDetails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.graphBlock {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px 0;
+}
+.graphBlock img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.graphBlock .graphData .title {
+  color: #d3d3d3;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 4px 0;
+}
+.graphBlock .graphData .amount {
+  color: #000;
+  font-weight: 700;
+  margin: 4px 0;
+  font-size: 18px;
+}
+.graphBlock .graphData .progress {
+  background: #fff;
+  font-size: 10px;
+  margin: 4px 0;
+}
+.graphBlock .graphData .progress span {
+  color: #11ae55;
+  font-weight: 600;
+}
+.customerOverviewBlock {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  width: 100%;
+  gap: 30px;
+}
+.customerOverviewBlock label {
+  font-size: 9px;
+  text-align: center;
+  font-weight: 600;
+  position: absolute;
+  top: 55%;
+  left: 42%;
+  line-height: 11px;
+}
+.customerOverviewBlock label span {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.overviewBlock,
+.customersBlock,
+.productBlock {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+}
+.overviewBlock h5,
+.customersBlock h5,
+.productBlock h5 {
+  padding: 0;
+  margin: 3px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+.overviewBlock h6,
+.customersBlock h6 {
+  color: #cccccc;
+  font-size: 11px;
+  padding: 0;
+  margin: 6px 0px;
+  font-weight: 600;
+}
+.overviewBlock p {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 11px;
+  color: #878a8a;
+}
+.overviewBlock p i {
+  font-size: 16px;
+  margin: 2px 0 0 4px;
+  cursor: pointer;
+}
+
+.table th {
+  color: #cccccc;
+  font-weight: 600;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.table .productDetailrow img {
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  float: left;
+  margin: 0 15px;
+}
+.table .productDetailrow span {
+  font-size: 12px;
+  font-weight: 700;
+}
+.table .productDetailrow p {
+  font-size: 10px;
+  color: #c8cbda;
+  font-weight: 600;
+}
+.table td {
+  font-size: 12px;
+  vertical-align: middle;
+  border: none;
+  white-space: nowrap;
+}
+@media (max-width: 1191px) {
+  .customerOverviewBlock {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .customerOverviewBlock canvas {
+    width: 100% !important;
+    object-fit: contain;
+  }
+  .customerOverviewBlock label {
+    left:46%;
+  }
+}
+@media (max-width: 1092px) {
+  .graphDetails {
+    grid-template-columns: 100% !important;
+  }
+}
+
+@media (max-width: 816px) {
+  .graphDetails {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
