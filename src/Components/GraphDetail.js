@@ -15,7 +15,6 @@ import earning from "../assets/earning.png";
 import orders from "../assets/orders.png";
 import balance from "../assets/balance.png";
 import total_sales from "../assets/total_sales.png";
-import product1 from "../assets/product1.jpg";
 import product2 from "../assets/product2.jpg";
 export default function GraphDetail() {
   const option = {
@@ -130,7 +129,7 @@ export default function GraphDetail() {
     <div className="Graph" style={{ padding: "30px" }}>
       <div className="header d-flex justify-content-between align-items-center flex-wrap">
         <h6 style={{ fontSize: "15px" }}>
-          <b>Hello Shahrukh</b> <img src={handwave} style={{ width: "18px" }} />
+          <b>Hello Shahrukh</b> <img src={handwave} alt="username" style={{ width: "18px" }} />
           ,
         </h6>
         <div className="form-group has-search">
@@ -147,7 +146,7 @@ export default function GraphDetail() {
               padding: "22px",
             }}
           >
-            <img src={earning} />
+            <img src={earning} alt="earning" />
           </div>
           <div className="graphData">
             <p className="title">Earning</p>
@@ -170,7 +169,7 @@ export default function GraphDetail() {
               padding: "22px",
             }}
           >
-            <img src={orders} />
+            <img src={orders} alt="orders"/>
           </div>
           <div className="graphData">
             <p className="title">Orders</p>
@@ -193,7 +192,7 @@ export default function GraphDetail() {
               padding: "22px",
             }}
           >
-            <img src={balance} />
+            <img src={balance} alt="balance"/>
           </div>
           <div className="graphData">
             <p className="title">Balance</p>
@@ -216,7 +215,7 @@ export default function GraphDetail() {
               padding: "22px",
             }}
           >
-            <img src={total_sales} />
+            <img src={total_sales} alt="total_sales"/>
           </div>
           <div className="graphData">
             <p className="title">Total Sales</p>
@@ -312,8 +311,8 @@ export default function GraphDetail() {
             </thead>
             <tbody>
               <tr>
-                <td scope="row" className="productDetailrow d-flex justify-content-start align-items-start gap-1 flex-nowrap">
-                  <img src={product2} />
+                <td className="productDetailrow d-flex justify-content-start align-items-start gap-1 flex-nowrap">
+                  <img src={product2} alt="product"/>
                   <div><span>Abstract 3D</span>
                   <p>
                     Loreum ipsum dolor sit amet, consectetur adipiscing elit
@@ -327,8 +326,8 @@ export default function GraphDetail() {
                 <td className="text-center">20</td>
               </tr>
               <tr>
-                <td scope="row" className="productDetailrow d-flex justify-content-start align-items-start gap-1 flex-nowrap">
-                  <img src={product2} />
+                <td className="productDetailrow d-flex justify-content-start align-items-start gap-1 flex-nowrap">
+                  <img src={product2} alt="product"/>
                   <div><span>Sarphens illustration</span>
                   <p>
                     Loreum ipsum dolor sit amet, consectetur adipiscing elit

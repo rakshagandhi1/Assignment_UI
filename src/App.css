@@ -270,6 +270,9 @@ div.content {
   border: none;
   white-space: nowrap;
 }
+.icon{
+  display: none!important;
+}
 @media (max-width: 1191px) {
   .customerOverviewBlock {
     grid-template-columns: repeat(1, 1fr);
@@ -279,7 +282,7 @@ div.content {
     object-fit: contain;
   }
   .customerOverviewBlock label {
-    left:46%;
+    left: 46%;
   }
 }
 @media (max-width: 1092px) {
@@ -292,24 +295,8 @@ div.content {
   .graphDetails {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
+  .icon{
+    display: block!important;
   }
-  .sidebar a {
-    float: left;
-  }
-  div.content {
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
+ 
 }

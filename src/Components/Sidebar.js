@@ -1,13 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import projectManager from "../assets/pm_profile.jpg";
 
 export default function Sidebar() {
+  const [myStyle, setMyStyle] = useState({
+    display: "block",
+  });
+  const toggleSideNav = () => {
+    if (myStyle.display === "block") {
+      setMyStyle({
+        display: "none",
+      });
+    } else {
+      setMyStyle({
+        display: "block",
+      });
+    }
+  };
   return (
-    <div class="sidebar">
+    <div className="sidebar" id="sidebar">
       <h5 className="heading">
         <i className="fa fa-dashboard"></i> Dashboard
       </h5>
-      <div className="mt-4">
+      <a className="icon" onClick={toggleSideNav}>
+        <i className="fa fa-bars"></i>
+      </a>
+      <div className="mt-4" id="links" style={myStyle}>
         <a className="active" href="#home">
           <span>
             <i className="fa fa-key"></i>&nbsp;&nbsp;Dashboard
@@ -50,15 +67,14 @@ export default function Sidebar() {
         style={{ color: "#fff" }}
       >
         <div className="d-flex justify-content-start align-items-center">
-          <img src={projectManager} />
-          <p>
+          <img src={projectManager} alt="project-manager" />
+          <div>
             <span>Evano</span>
             <p>Project Manager</p>
-          </p>
+          </div>
         </div>
         <i className="fa fa-angle-down"></i>
       </div>
-      <div class="menu-toggle"><i class="fa fa-bars"></i></div>
     </div>
   );
 }
