@@ -18,7 +18,7 @@ export default function Sidebar() {
   };
   return (
     <div className="sidebar" id="sidebar">
-      <h5 className="heading">
+     <h5 className="heading">
         <i className="fa fa-dashboard"></i> Dashboard
       </h5>
       <a className="icon" onClick={toggleSideNav}>

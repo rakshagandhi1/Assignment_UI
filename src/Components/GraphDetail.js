@@ -1,4 +1,5 @@
 import React from "react";
+import { Link,NavLink } from "react-router-dom";
 import { Bar, Doughnut } from "react-chartjs-2";
 import {
   BarElement,
@@ -127,10 +128,15 @@ export default function GraphDetail() {
   };
   return (
     <div className="Graph" style={{ padding: "30px" }}>
+       {/* <ul style={{display:'flex',listStyleType:'none',justifyContent:'flex-start',alignItems:'center',gap:'20px',padding:'20px'}}>
+          <li style={{fontWeight:'600',cursor:'pointer'}}><Link to='/'>Home</Link></li>
+          <li style={{fontWeight:'600',cursor:'pointer'}}>          <NavLink className={(navData) => navData.isActive ? "active" : "" } to="/about" />
+About</li>
+          <li style={{fontWeight:'600',cursor:'pointer'}}>Details</li>
+        </ul> */}
       <div className="header d-flex justify-content-between align-items-center flex-wrap">
         <h6 style={{ fontSize: "15px" }}>
-          <b>Hello Shahrukh</b> <img src={handwave} alt="username" style={{ width: "18px" }} />
-          ,
+          <b>Hello Shahrukh</b> <img src={handwave} alt="username" className="d-inline" style={{ width: "18px" }} />,
         </h6>
         <div className="form-group has-search">
           <span className="fa fa-search form-control-feedback"></span>

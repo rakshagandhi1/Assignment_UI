@@ -273,6 +273,9 @@ div.content {
 .icon{
   display: none!important;
 }
+.list_hover:hover{
+color:orangered;
+}
 @media (max-width: 1191px) {
   .customerOverviewBlock {
     grid-template-columns: repeat(1, 1fr);
