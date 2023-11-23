@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link,NavLink } from "react-router-dom";
 import { Bar, Doughnut } from "react-chartjs-2";
 import {
@@ -17,7 +17,9 @@ import orders from "../assets/orders.png";
 import balance from "../assets/balance.png";
 import total_sales from "../assets/total_sales.png";
 import product2 from "../assets/product2.jpg";
+import UserContext from "./UserContext";
 export default function GraphDetail() {
+  const {user} = useContext(UserContext)
   const option = {
     responsive: true,
     plugins: {
@@ -136,7 +138,7 @@ About</li>
         </ul> */}
       <div className="header d-flex justify-content-between align-items-center flex-wrap">
         <h6 style={{ fontSize: "15px" }}>
-          <b>Hello Shahrukh</b> <img src={handwave} alt="username" className="d-inline" style={{ width: "18px" }} />,
+          <b>Hello {user ? user.username : "Shahrukh"}</b> <img src={handwave} alt="username" className="d-inline" style={{ width: "18px" }} />,
         </h6>
         <div className="form-group has-search">
           <span className="fa fa-search form-control-feedback"></span>
